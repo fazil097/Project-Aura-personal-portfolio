@@ -1,0 +1,355 @@
+.navbar{
+    color: black;
+    padding: 0;
+    border-bottom: 1px solid gray;
+    background: url(https://images.pexels.com/photos/30925658/pexels-photo-30925658.jpeg);
+    background-position: center;
+    width: 100%;
+    overflow: hidden;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    padding: 10px;
+}
+.navbarDark{
+    background-color: transparent;
+    color: bisque;
+}
+
+.navbar .ul{
+    /* border: 2px solid red; */
+    list-style: none;
+    display: flex;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0px;
+    height: 80px;
+}
+.ul > li{
+    /* border: 2px solid red; */
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    align-self: center;
+}
+.ul  :first-child{
+    flex-basis: 60%;
+}
+.ul > :nth-child(2){
+    flex-basis: 10%;
+}
+.ul > :nth-child(3){
+    flex-basis: 10%;
+}
+.ul > :nth-child(4){
+    flex-basis: 10%;
+}
+.ul > :nth-child(5){
+    flex-basis: 10%;
+    align-self: center;
+}
+.ul > :nth-child(5) button {
+    align-self: center;
+    border-radius: 4px;
+  }
+.ul > .li5{
+    /* border: 2px solid yellowgreen; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 25px;
+    height: auto;
+}
+
+/* page1-css */
+.page1{
+    /* border: 2px solid teal; */
+    height: auto; /* avoid vh issues on mobile */
+    width: auto; 
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    background: url(https://images.pexels.com/photos/30925658/pexels-photo-30925658.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 10px;
+}
+.page1 section{
+    /* border: 5px solid; */
+    height: 50%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0.2rem;
+    backdrop-filter: blur(8px);
+    background-color: transparent;
+    padding: 20px;
+}
+.page1 > .sec1{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-basis: 36%;
+    padding: 15px;
+}
+.page1 > .sec2{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 63%;
+}
+.page1 > .sec3{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 56%;
+}
+
+.page1 > .sec4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 43%;
+    text-align: center;
+}
+
+.sec4 > h1{
+    margin: 10px;
+    text-align: justify;
+}
+
+.page1 > .sec1,
+.page1 >.sec2,
+.page1 >.sec3,
+.page1 >.sec4{
+    min-height: 280px;
+    border-radius: 20px;
+}
+.page1 > .sec2,
+.page1 > .sec3{
+    transition-property: box-shadow;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+     /* second animation for movement */
+     transition-property: box-shadow, transform;
+     /* This lists both properties separately */
+     transition-duration: 0.3s, 0.3s;
+     transition-timing-function: ease-in-out, ease-in-out;
+
+}
+
+.page1 > .sec2:hover,
+.page1 > .sec3:hover {
+    box-shadow: 10px 10px 5px none;
+    transform: translateY(-5px); /* move forward/up */
+    box-shadow: 12px 12px 20px black;
+}
+.page1 img{
+    height: 78px;
+    width: 85px;
+    margin: 1.2rem;
+}
+@media (max-width: 1024px) {
+    .navbar {
+      display: none !important;
+    }
+  }
+
+/* Phones */
+@media (max-width: 600px) {
+    .navbar {
+        /* border: 2px solid red; */
+        border-bottom: 2px solid slategrey;
+        display: flex;
+        flex-direction: row;
+        height: 100px;
+    }
+
+    .navbar ul {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .navbar > ul button {
+        width: 50px;
+        height: 50px;
+    }
+
+    .navbar ul > li {
+        flex-basis: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Page1 sections height for better spacing */
+    .page1 > .sec1,
+    .page1 > .sec2,
+    .page1 > .sec3,
+    .page1 > .sec4 {
+        min-height: 250px; /* keeps sections tall enough */
+        min-width: 380px;
+        border-radius:20px ;
+    }
+
+    .page1 .sec1{
+        text-align: center;
+    }
+    .page1 > section{
+        margin: 10px;
+    }
+
+    .page1 img {
+        height: 60px;
+        width: 65px;
+        margin: 0.5rem;
+    }
+
+    .page1 > .sec1 button {
+        padding: 0.5rem;
+    }
+}
+
+
+/* -------------------------------------------Anima---------------------------------------------------- */
+
+.animateUpDown1{
+    animation-name: upDown1;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; 
+    animation-direction: alternate; 
+    animation-timing-function: ease-in-out;
+}
+@keyframes upDown1 {
+    0% {
+        transform: translateY(50px);
+        animation-delay: 0.4s;
+    }
+    100% {
+        transform: translateY(-50px);
+    }
+}
+
+.animateUpDown2{
+    animation-name: upDown2;
+    animation-duration:2s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite; 
+    animation-direction: alternate;
+    animation-delay: 0.6s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes upDown2 {
+    0% {
+        transform: translateY(50px);
+        animation-delay: 0.6s; 
+
+    }
+    100% {
+        transform: translateY(-50px);
+    }
+}
+.animateUpDown3{
+    animation-name: upDown3;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; 
+    animation-direction: alternate;
+    animation-delay: 0.8s; 
+    animation-timing-function: ease-in-out;
+    
+}
+@keyframes upDown3 {
+    0% {
+        transform: translateY(50px);
+        animation-delay: 0.8s; 
+    }
+    100% {
+        transform: translateY(-50px);
+    }
+}
+
+.animateUpDown4{
+    animation-name: upDown4;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; 
+    animation-direction: alternate;
+    animation-delay: 1s; 
+    animation-timing-function: ease-in-out;
+    
+}
+@keyframes upDown4 {
+    0% {
+        transform: translateY(50px);
+        animation-delay: 1s; 
+    }
+    100% {
+        transform: translateY(-50px);
+    }
+}
+
+.animateUpDown5{
+    animation-name: upDown5;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; 
+    animation-direction: alternate;
+    animation-delay: 0.5s; 
+    animation-timing-function: ease-in-out;
+    
+}
+@keyframes upDown5 {
+    0% {
+        transform: translateY(50px);
+        animation-delay: 1s; 
+    }
+    100% {
+        transform: translateY(-50px);
+    }
+}
+
+.animateUpDown6{
+    animation-name: upDown6;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; 
+    animation-direction: alternate;
+    animation-delay: 0.7s; 
+    animation-timing-function: ease-in-out;
+    
+}
+@keyframes upDown6 {
+    0% {
+        transform: translateY(50px);
+        animation-delay: 1s; 
+    }
+    100% {
+        transform: translateY(-50px);
+    }
+}
+
+.animateUpDown7{
+    animation-name: upDown7;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; 
+    animation-direction: alternate;
+    animation-delay: 1s; 
+    animation-timing-function: ease-in-out;
+    
+}
+@keyframes upDown7 {
+    0% {
+        transform: translateY(50px);
+        animation-delay: 1s; 
+    }
+    100% {
+        transform: translateY(-50px);
+    }
+}

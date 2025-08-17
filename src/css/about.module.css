@@ -1,0 +1,106 @@
+.main1{
+    /* border:1px solid; */
+    padding: 10px;
+    /* margin: 10px; */
+    /* background: url(https://images.pexels.com/photos/30520682/pexels-photo-30520682.jpeg); */
+    background: url(https://images.pexels.com/photos/30925658/pexels-photo-30925658.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+   
+}
+
+.sec1{
+    border-bottom:2px solid;
+}
+.sec1 > h1{
+    color: whitesmoke !important;
+}
+.main1 > .sec1 , .sec2{
+    /* border: 2px solid; */
+    padding: 21px;
+    margin: 10px;
+    display: flex;
+    margin: 10px;
+    backdrop-filter: blur(10px);
+    background-color: transparent;
+    /* border: 2px solid red;*/
+    border-radius: 10px;
+}
+
+.sec2 > .art1 , .art2{
+    /* border: 2px solid red; */
+    padding: 40px;
+    margin: 15px;
+}
+.sec2 > .art1{
+    display: flex;
+    flex-basis: 20%;
+    flex-direction: column;
+    
+    /* border-bottom: 2px solid gray; */
+}
+
+.art1 > img{
+    height:400px;
+    width: 300px;
+    border-radius: 20px;
+}
+.sec2 > .art2{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 80%;
+    padding: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .sec2 {
+        flex-direction: column;
+    }
+    .sec2 > .art1,
+    .sec2 > .art2 {
+        flex-basis: 100%;
+    }
+    .art1 > img {
+        height: auto;
+        width: 100%;
+    }
+    .sec2 > .art2{
+        text-align: inherit;
+    }
+}
+
+/* For small mobile devices */
+@media (max-width: 480px) {
+    .main1 {
+        padding: 10px;
+    }
+    .main1 > .sec1,
+    .main1 > .sec2 {
+        padding: 10px;
+        margin: 5px;
+    }
+    .art1 > img {
+        height: auto;
+        width: 100%;
+        border-radius: 10px;
+    }
+    .sec2 > .art2 {
+        padding: 5px;
+        font-size: 14px;
+        
+    }
+    .art2 p{
+        text-align:justify;
+        font-size: 1.2rem;
+        text-justify:newspaper; /* Distributes spacing better */
+        word-spacing: normal;
+        hyphens: auto; /* Breaks long words neatly */
+        overflow-wrap: break-word;
+        word-break: break-word;
+        line-height: 1.2;         /* reduce line spacing */
+        word-spacing: 0px;        /* reset extra word gap */
+        letter-spacing: normal;   /* reset letter spacing */
+    }
+}

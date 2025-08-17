@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    height: 100%;
+    width: 100%;
+    scroll-behavior: smooth;
+}
+button{
+    height: 7%;
+    width: 25%;
+    align-self: center;
+    margin-top: 20px;
+    background-color: transparent;
+    border: 1px solid;
+    border-radius: 5px;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    color: azure;
+}
+button:hover{
+    box-shadow: 5px 5px 20px rgb(11, 11, 11);
+}
+
+p{
+    font-size: 1.3rem;
+    line-height: 1.3em;
+    text-align: justify; /*this is used to align text evenly*/
+    font-weight: 1500;
+    padding: 10px;
+}
+
+a::before{
+    color: tomato !important;
+}
+a::after{
+    color: rgb(187, 170, 170) !important;
+}
+
+input,textarea{
+    outline:none;
+    color: whitesmoke;
+}
+
+@media (max-width:600px){
+    body{
+        background-color: black;
+    }
+    p,h1,h2{
+        color: white;
+    }
+    a{
+        text-decoration: none;
+        font-size: 20px;
+        color: blanchedalmond;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-in-out;
+    }
+
+    a:hover{
+        text-decoration: underline;
+    }
+}

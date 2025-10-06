@@ -94,11 +94,11 @@ const form = useRef();
         <section className={input .i_sec2}>
         <form className={input .i_sec2_child} ref={form} onSubmit={sendEmail}>
         <label>Name</label>
-        <input type="text" placeholder='Enter Name....' name="user_name"/>
+        <input type="text" placeholder='Enter Name....' name="user_name" required/>
         <label>Email</label>
-        <input type="email" placeholder='Enter Email....'name="user_email"/>
+        <input type="email" placeholder='Enter Email....'name="user_email" required/>
         <label>Message😉</label>
-        <textarea  placeholder='Type Messages....' name="user_message"/>
+        <textarea  placeholder='Type Messages....' name="user_message" required/>
         <button type="submit" value="send">Submit</button>
         </form>
         </section>

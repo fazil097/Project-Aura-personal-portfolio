@@ -5,9 +5,10 @@ import Home1 from './Home1'
 import About from './About'
 import Project from './Project'
 import Input from './Input'
-import './css/global.module.css'
+import './css/global.css'
 import Footer from './Footer'
 import { BrowserRouter } from 'react-router-dom'
+import { ToastContainer } from 'react-toastify'
 
 
 const App = () => {
@@ -21,9 +22,10 @@ const App = () => {
       <Navbar/>
       <Home1 id="home"/>
       <About id="about"/>  
-      <Project id="project"/>
+      <Project id="projects"/>
       <Input id="contact"/>
       <Footer/>
+      <ToastContainer position="top-right" theme="dark" pauseOnHover="true"/>
     </BrowserRouter>
   )
 }

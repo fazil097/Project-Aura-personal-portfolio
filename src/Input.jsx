@@ -2,6 +2,17 @@ import React, { useState , useRef} from 'react'
 import input from './css/input.module.css'
 import emailjs from '@emailjs/browser'
 
+// ----------------------images-----------------------------------------//
+
+import gmail from '/public/email.png'
+import linkedin from '/public/linkedin.png'
+import github from '/public/github.png'
+import phone from '/public/phone.png'
+
+// -----------------------toastify-----------------------------------------//
+
+import { toast } from 'react-toastify'
+
 const Input = () => {
 
   let [show,setshow] = useState("")
@@ -36,12 +47,13 @@ const form = useRef();
       .then(
         () => {
           console.log('SUCCESS!');
-          alert("SUCCESS!")
+          toast.success("SUCCESS!")
 
           form.current.reset();
         },
         (error) => {
           console.log('FAILED...', error.text);
+          toast.error("!ERROR")
         },
       );
   };
@@ -54,25 +66,25 @@ const form = useRef();
     <div className={input .i_sec_parent}>
       <section className={input .i_sec1}>
 
-      <img src="/public/linkedin.png"
+        <img src={linkedin}
          alt="linkedin" 
          className={input .imgs}
          onClick={()=>setshow(show === "link" ? "" : "link" )}/>
         {show==="link" && <a href='https://www.linkedin.com/in/mohamed-fazil-a37687349/'>Vist Linked-In</a>}
 
-        <img src="/public/email.png" 
+        <img src={gmail} 
         alt="email" className={input .imgs} 
         onClick={()=>setshow(show === "email" ? "" : 'email')}/>
         {show==='email' && <a onClick={inpmail}>Email</a>  }
 
-        <img src="/public/github.png" 
+        <img src={github} 
         alt="github" 
         className={input .imgs}
         onClick={()=>setshow(show === "git" ? "" : "git")}/>
         
         {show==="git" && <a href='https://github.com/fazil097/project' style={{textDecoration:'none',fontSize:'20px'}}>Vist GitHub</a>}
 
-        <img src="/public/phone.png" 
+        <img src={phone} 
         alt="phone" 
         className={input .imgs} 
         onClick={()=>setshow(show === "phone" ? "" : "phone")}/>

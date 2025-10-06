@@ -2,18 +2,22 @@
     color: black;
     padding: 0;
     border-bottom: 1px solid gray;
-    background: url(https://images.pexels.com/photos/30925658/pexels-photo-30925658.jpeg);
+    /* background: url(https://images.pexels.com/photos/30925658/pexels-photo-30925658.jpeg); */
     background-position: center;
     width: 100%;
     overflow: hidden;
-    position: sticky;
+    position: fixed;
     z-index: 1000;
     top: 0;
-    padding: 10px;
+    bottom: -1;
+    /* padding: 10px; */
 }
 .navbarDark{
     background-color: transparent;
     color: bisque;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
 }
 
 .navbar .ul{
@@ -61,6 +65,7 @@
     padding-bottom: 25px;
     height: auto;
 }
+/* ------------------------------mainpagestarts------------------------------------------ */
 
 /* page1-css */
 .page1{
@@ -73,9 +78,15 @@
     align-content: center;
     justify-content: center;
     background: url(https://images.pexels.com/photos/30925658/pexels-photo-30925658.jpeg);
+    /* background: url(/public/galaxy.jpg); */
     background-position: center;
-    background-repeat: no-repeat;
-    padding: 10px;
+    /* background-repeat: no-repeat; */
+    /* padding: 10px; */
+    width: 100%;
+    padding-top: 100px;
+    padding-left: 10px;
+    padding-right:10px ;
+    padding-bottom: 10px;
 }
 .page1 section{
     /* border: 5px solid; */
@@ -89,23 +100,23 @@
     margin: 0.2rem;
     backdrop-filter: blur(8px);
     background-color: transparent;
-    padding: 20px;
+    padding: 10px;
 }
 .page1 > .sec1{
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     flex-direction: column;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     flex-basis: 36%;
     padding: 15px;
 }
 .page1 > .sec2{
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     flex-basis: 63%;
 }
 .page1 > .sec3{
@@ -134,8 +145,10 @@
     min-height: 280px;
     border-radius: 20px;
 }
+.page1 > .sec1,
 .page1 > .sec2,
-.page1 > .sec3{
+.page1 > .sec3,
+.page1 > .sec4{
     transition-property: box-shadow;
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
@@ -146,24 +159,27 @@
      transition-timing-function: ease-in-out, ease-in-out;
 
 }
-
+.page1 > .sec1:hover,
 .page1 > .sec2:hover,
-.page1 > .sec3:hover {
+.page1 > .sec3:hover,
+.page1 > .sec4:hover{
     box-shadow: 10px 10px 5px none;
     transform: translateY(-5px); /* move forward/up */
     box-shadow: 12px 12px 20px black;
 }
 .page1 img{
-    height: 78px;
-    width: 85px;
+    height: auto;
+    width: 75px;
     margin: 1.2rem;
+    object-fit: cover;
+    /* border: 2px solid; */
+    /* border-radius: 12px; */
 }
-@media (max-width: 1024px) {
+@media (max-width: 601px) {
     .navbar {
       display: none !important;
     }
   }
-
 /* Phones */
 @media (max-width: 600px) {
     .navbar {
@@ -215,10 +231,49 @@
         margin: 0.5rem;
     }
 
-    .page1 > .sec1 button {
-        padding: 0.5rem;
-    }
 }
+
+  @media (max-width: 1024px) {
+    .page1 {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .page1 section {
+      flex-basis: 48%; /* 2 columns */
+      height: auto;
+    }
+    .page1 > .sec1,
+    .page1 > .sec2,
+    .page1 > .sec3,
+    .page1 > .sec4 {
+      flex-basis: 48%;
+    }
+  }
+  
+  /* 💻 Small Laptops (1025px–1279px) */
+  @media (min-width: 1025px) and (max-width: 1279px) {
+    .page1 {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    .page1 section {
+      flex-basis: 45%; /* wider 2-column layout */
+    }
+    .page1 > .sec1 {
+      flex-basis: 40%;
+    }
+    .page1 > .sec2 {
+      flex-basis: 55%;
+    }
+    .page1 > .sec3,
+    .page1 > .sec4 {
+      flex-basis: 48%;
+    }
+  }
+  
+  /* 💻 Medium Laptops (1280px–1439px) */
+  
+
 
 
 /* -------------------------------------------Anima---------------------------------------------------- */
@@ -229,6 +284,19 @@
     animation-iteration-count: infinite; 
     animation-direction: alternate; 
     animation-timing-function: ease-in-out;
+}
+
+.sec2:hover,
+.sec3:hover{
+    animation-play-state: paused;
+    opacity: 0.7;
+}
+
+.sec2>img:hover,
+.sec3>img:hover{
+    animation-play-state: paused;
+    /* box-shadow: 10px 10px 15px whitesmoke; */
+    opacity: unset;
 }
 @keyframes upDown1 {
     0% {

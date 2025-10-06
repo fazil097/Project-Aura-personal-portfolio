@@ -13,6 +13,10 @@
 .sec1{
     border-bottom:2px solid;
 }
+
+.sec2{
+    padding: 40px;
+}
 .sec1 > h1{
     color: whitesmoke !important;
 }
@@ -30,9 +34,15 @@
 
 .sec2 > .art1 , .art2{
     /* border: 2px solid red; */
-    padding: 40px;
-    margin: 15px;
+    padding: 25px;
+    margin: 29px;
 }
+
+.art2{
+    padding: 30px;
+    margin: 40px;
+}
+
 .sec2 > .art1{
     display: flex;
     flex-basis: 20%;

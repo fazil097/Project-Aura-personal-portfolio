@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <>
       <section className={footer .f_sec}>
-        <h3>&copy;2025 Mohamed Fazil A| Designed & developed with React.js ⚛️ | Background images by Steve Johnson (Pexels) – no copyright claimed.</h3>
+        <h4>&copy;2025 – Project Aura | Designed and developed by Fazil using React.js</h4>
       </section>
     </>
   )

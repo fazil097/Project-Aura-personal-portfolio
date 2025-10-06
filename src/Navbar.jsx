@@ -11,7 +11,7 @@ const Navbar = () => {
     <>
     <div className={navbar .n_parent}>
       <section className={navbar .n_sec_parent}>
-      <Link to="home" smooth={true} duration={600}><h1>Ᵽɍøɉɇȼŧ ȺᵾɍȺ</h1></Link>
+      <Link to="home" smooth={true} duration={600}><h1>𝑷𝒓𝒐𝒋𝒆𝒄𝒕 𝑨𝒖𝒓𝒂</h1></Link>
       <img src={phnav}
            className={navbar .menu_icon} 
            onClick={()=> setopen(!open)}/>

@@ -8,6 +8,7 @@
     position: relative;
     display: none;
 }
+
 .n_sec_parent{
     display: flex;
     /* border: 2px solid; */
@@ -15,7 +16,6 @@
     justify-content: center;
     align-items: center;
 }
-
 
 .n_sec_parent > .menu_icon{
     height: 50px;
@@ -51,7 +51,6 @@
     cursor: pointer;
 }
 
-
 @media (max-width: 600px) {
     .n_parent{
         display: flex;
@@ -72,5 +71,14 @@
         width: 100%;
         margin: 10px;
         padding: 10px;
+    }
+
+    .show{
+        background-color: transparent;
+        backdrop-filter: blur(10px);
+    }
+    .nav_link{
+        background-color: transparent;
+        backdrop-filter: blur(10px);
     }
 }

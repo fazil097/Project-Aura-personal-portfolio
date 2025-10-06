@@ -1,5 +1,6 @@
 import React from 'react'
 import about from './css/about.module.css'
+import photo from '/public/photo2.jpg'
 
 
 const About = () => {
@@ -21,7 +22,7 @@ const About = () => {
 
         <section className={about .sec2}>
             <article className={about .art1}>
-            <img src="/public/photo2.jpg" alt="" height={'200px'}/>
+            <img src={photo} alt="" height={'200px'}/>
             </article>
            
             <article className={about .art2}>
@@ -39,7 +40,7 @@ const About = () => {
                     Management System with full CRUD functionality, user authentication,
                     and an intuitive admin interface, built using Django.</b></p>
 
-                    <button onClick={download}>Dowloade Resume</button>   
+                    <button onClick={download}>Download Resume</button>   
             </article>
         </section>
       </div>

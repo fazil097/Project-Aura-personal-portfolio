@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const TypingEffect = ({ text, speed = 250 }) => {
+const TypingEffect = ({ text, speed = 100 }) => {
   const [displayedText, setDisplayedText] = useState("");
   const [index, setIndex] = useState(0);
 

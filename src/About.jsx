@@ -7,8 +7,8 @@ const About = () => {
 
   let download = ()=>{
     const link = document.createElement("a");
-    link.href = '/public/Mohamed Fazil.A(Full-stack)-1.pdf'
-    link.download = '/public/Mohamed Fazil.A(Full-stack)-1.pdf'
+    link.href = "/public/Mohamed Fazil(FSD).pdf"
+    link.download = '/public/Mohamed Fazil(FSD).pdf'
     link.click();
   }
 

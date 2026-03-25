@@ -58,9 +58,9 @@
     }
 
     const navmail = () => {
-      const email = "mohamedfazil.a025@gmail.com"; // use a valid email
+      const email = "mohamedfazil.a025@gmail.com"; // ? use a valid email
       const subject = "Job Opportunity";
-      const body = "Hello Fazil,I would like to discuss..."; // <-- define body here
+      const body = "Hello Fazil,I would like to discuss..."; // ? <-- define body here
     
       const ua = navigator.userAgent || navigator.vendor || window.opera;
       const isMobile = /android|iphone|ipad|ipod/i.test(ua);

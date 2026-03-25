@@ -89,6 +89,7 @@
   margin: 5px;
   /* border: 2px solid yellow; */
   align-self: center;
+  cursor: pointer !important;
 }
 .i_sec1 > a{
   align-self: center;

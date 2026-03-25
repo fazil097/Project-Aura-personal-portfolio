@@ -21,7 +21,7 @@ button{
     border-radius: 5px;
     transition-duration: 0.3s;
     transition-timing-function: ease-in-out;
-    color: azure;
+    color: rgb(231, 231, 231);
     cursor: pointer !important;
 }
 button:hover{
@@ -31,7 +31,7 @@ button:hover{
 p{
     font-size: 1.3rem;
     line-height: 1.3em;
-    text-align: justify; /*this is used to align text evenly*/
+    text-align:justify; 
     font-weight: 1500;
     padding: 10px;
 }

@@ -102,15 +102,15 @@
         
     }
     .art2 p{
-        text-align:justify;
+        text-align: start;
         font-size: 1.2rem;
-        text-justify:newspaper; /* Distributes spacing better */
+        text-justify:newspape; /* Distributes spacing better */
         word-spacing: normal;
         hyphens: auto; /* Breaks long words neatly */
         overflow-wrap: break-word;
         word-break: break-word;
         line-height: 1.2;         /* reduce line spacing */
         word-spacing: 0px;        /* reset extra word gap */
-        letter-spacing: normal;   /* reset letter spacing */
+        letter-spacing: normal;   /*reset letter spacing*/
     }
 }

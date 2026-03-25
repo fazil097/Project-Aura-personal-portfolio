@@ -39,6 +39,7 @@
     background-color: transparent;
     backdrop-filter: blur(10px);
     width: 40%;
+    cursor: pointer !important;
 }
 
 .p_asd1 , .p_asd2{
@@ -113,7 +114,7 @@
     }
     .p_asd1 > p,
     .p_asd2 > p{
-        text-align: justify;
+        text-align: start;
         text-justify:newspaper; /* Distributes spacing better */
         word-spacing: normal;
         hyphens: auto; /* Breaks long words neatly */

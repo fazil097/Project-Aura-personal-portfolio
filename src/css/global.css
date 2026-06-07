@@ -24,6 +24,8 @@ button{
     transition-timing-function: ease-in-out;
     color: rgb(231, 231, 231);
     cursor: pointer !important;
+    background-color: rgb(9, 136, 155);
+    border: 0px;
 }
 button:hover{
     box-shadow: 5px 5px 20px rgb(11, 11, 11);

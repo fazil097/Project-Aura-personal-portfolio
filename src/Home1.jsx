@@ -90,18 +90,18 @@
       </section>
 
       <section className={home1 .sec2}>
-      <img src={html_img} alt=""
+      <img src={html_img} alt="HTML5"
         className={home1 .animateUpDown1}/>
-      <img src={css_img} alt="" className={home1 .animateUpDown2}/>
-      <img src={js_img} alt="" className={home1 .animateUpDown3} />
-      <img src={react_img} alt="" className={home1 .animateUpDown4} />
+      <img src={css_img} alt="CSS3" className={home1 .animateUpDown2}/>
+      <img src={js_img} alt="JAVASCRIPT" className={home1 .animateUpDown3} />
+      <img src={react_img} alt="REACT JS" className={home1 .animateUpDown4} />
       </section>
 
       <section className={home1 .sec3}>
-        <img src={py_img} alt=""
+        <img src={py_img} alt="PYTHON"
         className={home1 .animateUpDown5}  />
-        <img src={django_img} alt="" className={home1 .animateUpDown6} />
-        <img src={db_img} alt="" className={home1 .animateUpDown7}  />
+        <img src={django_img} alt="DJANGO" className={home1 .animateUpDown6} />
+        <img src={db_img} alt="ORACLE SQL" className={home1 .animateUpDown7}  />
       </section>
       
       <section className={home1 .sec4} >

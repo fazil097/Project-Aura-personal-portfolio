@@ -40,6 +40,22 @@ const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
 
+  const name = form.current.user_name.value;
+  const email = form.current.user_email.value;
+  const message = form.current.user_message.value;
+
+  // ✅ Validation
+  if (!name || !email || !message) {
+    toast.error("Please fill all fields!");
+    return;
+  }
+
+  if (!email.includes("@")) {
+    toast.error("Enter valid email!");
+    return;
+  }
+
+
     emailjs
       .sendForm('service_bofssma', 'template_kl8n2z5', form.current, {
         publicKey: 'ADsFyLkkeA3CAy1Hz',
@@ -94,11 +110,11 @@ const form = useRef();
         <section className={input .i_sec2}>
         <form className={input .i_sec2_child} ref={form} onSubmit={sendEmail}>
         <label>Name</label>
-        <input type="text" placeholder='Enter Name....' name="user_name" required/>
+        <input type="text" placeholder='Enter Name....' name="user_name"/>
         <label>Email</label>
-        <input type="email" placeholder='Enter Email....'name="user_email" required/>
+        <input type="email" placeholder='Enter Email....'name="user_email"/>
         <label>Message😉</label>
-        <textarea  placeholder='Type Messages....' name="user_message" required/>
+        <textarea  placeholder='Type Messages....' name="user_message"/>
         <button type="submit" value="send">Submit</button>
         </form>
         </section>

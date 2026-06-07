@@ -5,6 +5,7 @@
 }
 html{
     scroll-behavior: smooth;
+    background-color: whitesmoke;
 }
 body{
     height: 100%;

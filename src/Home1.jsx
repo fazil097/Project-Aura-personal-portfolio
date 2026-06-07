@@ -88,6 +88,7 @@
         <h1><TypingEffect text='MOHAMED FAZIL A'/></h1>
         <button onClick={navmail}>Hire Me</button>
       </section>
+
       <section className={home1 .sec2}>
       <img src={html_img} alt=""
         className={home1 .animateUpDown1}/>
@@ -95,12 +96,14 @@
       <img src={js_img} alt="" className={home1 .animateUpDown3} />
       <img src={react_img} alt="" className={home1 .animateUpDown4} />
       </section>
+
       <section className={home1 .sec3}>
         <img src={py_img} alt=""
         className={home1 .animateUpDown5}  />
         <img src={django_img} alt="" className={home1 .animateUpDown6} />
         <img src={db_img} alt="" className={home1 .animateUpDown7}  />
       </section>
+      
       <section className={home1 .sec4} >
         <h1><TypingEffect text="Full-Stack Developer specializing in Python and React, fueled by passion and curiosity. As a fresher, I bring fresh ideas and the drive to build clean, functional, and user-friendly applications."/></h1>
       </section>
